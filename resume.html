@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>suthi - Curriculum Vitae | MCA Scholar at PIM Udupi</title>
+  <meta name="description" content="Official Resume and Curriculum Vitae of suthi, first year MCA student at Poornaprajna Institute of Management (PIM) Udupi.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #ea580c;
+      --charcoal-900: #0f172a;
+      --charcoal-700: #334155;
+      --charcoal-500: #64748b;
+      --border-color: #e2e8f0;
+      --bg-light: #f8fafc;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--charcoal-900);
+      background-color: var(--bg-light);
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+
+    .resume-container {
+      max-width: 840px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      border: 1px solid var(--border-color);
+    }
+
+    .action-bar {
+      max-width: 840px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background-color: #c2410c;
+    }
+
+    .btn-back {
+      background-color: #ffffff;
+      color: var(--charcoal-700);
+      border: 1px solid var(--border-color);
+    }
+
+    .btn-back:hover {
+      background-color: #f1f5f9;
+      color: var(--primary);
+    }
+
+    /* Resume Content */
+    header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--charcoal-900);
+    }
+
+    .headline {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-top: 0.2rem;
+    }
+
+    .location {
+      font-size: 0.875rem;
+      color: var(--charcoal-500);
+      margin-top: 0.25rem;
+    }
+
+    .contact-details {
+      text-align: right;
+      font-size: 0.875rem;
+      color: var(--charcoal-700);
+      line-height: 1.6;
+    }
+
+    .contact-details a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .contact-details a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      margin-bottom: 1.75rem;
+    }
+
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.9375rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.4rem;
+      margin-bottom: 0.85rem;
+      font-weight: 700;
+    }
+
+    p {
+      color: var(--charcoal-700);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .entry {
+      margin-bottom: 1rem;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .entry-sub {
+      color: var(--charcoal-500);
+      font-size: 0.875rem;
+      margin-top: 0.15rem;
+    }
+
+    .cgpa-highlight {
+      display: inline-block;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.85rem;
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      margin-top: 0.35rem;
+    }
+
+    .skills-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      font-size: 0.875rem;
+    }
+
+    .skills-list li {
+      color: var(--charcoal-700);
+    }
+
+    .skills-list strong {
+      color: var(--charcoal-900);
+      display: inline-block;
+      width: 220px;
+    }
+
+    @media (max-width: 600px) {
+      .skills-list strong {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.15rem;
+      }
+      .resume-container {
+        padding: 1.75rem;
+      }
+      .contact-details {
+        text-align: left;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .action-bar {
+        display: none !important;
+      }
+      .resume-container {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Action Bar -->
+  <div class="action-bar">
+    <a href="index.html" class="btn btn-back">
+      &larr; Back to Portfolio
+    </a>
+    <button type="button" class="btn btn-primary" onclick="window.print()">
+      Print / Save as PDF
+    </button>
+  </div>
+
+  <!-- Printable Curriculum Vitae -->
+  <main class="resume-container">
+    <header>
+      <div>
+        <h1>suthi</h1>
+        <div class="headline">First-Year MCA Student · Aspiring Software Developer</div>
+        <div class="location">Brahmavara, Udupi, Karnataka, India</div>
+      </div>
+      <div class="contact-details">
+        <p><strong>Email:</strong> <a href="mailto:suthipoojari@gmail.com">suthipoojari@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:8904035347">+91 8904035347</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/in/SuthiPoojary" target="_blank" rel="noopener noreferrer">github.com/in/SuthiPoojary</a></p>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <h2>Academic Profile & Summary</h2>
+      <p>
+        Motivated postgraduate student currently pursuing Master of Computer Applications (MCA) at Poornaprajna Institute of Management (PIM), Udupi, with a strong academic foundation demonstrated by an <strong>8.87 CGPA</strong> in Bachelor of Computer Applications (BCA). Honest and self-motivated, with verified foundational competencies in core programming (C, C++, Python, Java), practical web development, and applied machine learning.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2>Education</h2>
+      
+      <div class="entry">
+        <div class="entry-header">
+          <span>Master of Computer Applications (MCA)</span>
+          <span>2026 – 2028 (Pursuing)</span>
+        </div>
+        <div class="entry-sub">Poornaprajna Institute of Management (PIM) · Udupi, Karnataka</div>
+        <p style="margin-top: 0.35rem;">
+          Specialization: Computer Applications & Software Development.
+        </p>
+      </div>
+
+      <div class="entry" style="margin-top: 1rem;">
+        <div class="entry-header">
+          <span>Bachelor of Computer Applications (BCA)</span>
+          <span>2023 – 2026 (Completed)</span>
+        </div>
+        <div class="entry-sub">Saint Mary's Syrian College Bramhavara · Karnataka</div>
+        <p style="margin-top: 0.35rem;">
+          Specialization: Computer Applications.
+        </p>
+        <div class="cgpa-highlight">Graduated with CGPA: 8.87 / 10</div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h2>Technical Skills & Programming Proficiency</h2>
+      <ul class="skills-list">
+        <li>
+          <strong>Core Languages (Basic Level):</strong>
+          <span>C, C++, Python, Java, PHP, C#, R</span>
+        </li>
+        <li>
+          <strong>Web Fundamentals:</strong>
+          <span>HTML (Basic), CSS, JavaScript</span>
+        </li>
+        <li>
+          <strong>Backend & Frameworks:</strong>
+          <span>Node.js, Flask</span>
+        </li>
+        <li>
+          <strong>Databases & Storage:</strong>
+          <span>MySQL, MongoDB, SQLite</span>
+        </li>
+        <li>
+          <strong>Cloud & Deployment:</strong>
+          <span>Microsoft Azure, AWS</span>
+        </li>
+        <li>
+          <strong>Development Tools & IDEs:</strong>
+          <span>Visual Studio Code, Git, GitHub</span>
+        </li>
+        <li>
+          <strong>Foundations & Analytics:</strong>
+          <span>NumPy, Data Structures and Algorithms, Object-Oriented Programming (OOP), Problem Solving</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2>Academic Technical Projects</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span>Object Detection with Images</span>
+          <span style="color: #059669;">Completed</span>
+        </div>
+        <div class="entry-sub">Domain: Machine Learning & Computer Vision &bull; Tech: Python, Computer Vision, Machine Learning, NumPy</div>
+        <p style="margin-top: 0.4rem;">
+          Developed an automated machine learning and computer vision solution that identifies and classifies multiple objects within digital images, automatically annotating coordinate bounding boxes and confidence levels. Solves the problem of manual visual identification by automating detection, reducing human effort, and enhancing cataloging accuracy.
+        </p>
+      </div>
+    </section>
+
+    <!-- Professional Certifications -->
+    <section>
+      <h2>Professional Certifications</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span>Data Science</span>
+          <span>2025</span>
+        </div>
+        <div class="entry-sub">Issued by: IBM from Manipal</div>
+      </div>
+
+      <div class="entry" style="margin-top: 0.6rem;">
+        <div class="entry-header">
+          <span>Java Programming</span>
+          <span>2025</span>
+        </div>
+        <div class="entry-sub">Issued by: Besant Technologies</div>
+      </div>
+
+      <div class="entry" style="margin-top: 0.6rem;">
+        <div class="entry-header">
+          <span>Full-Stack Development</span>
+          <span>2026</span>
+        </div>
+        <div class="entry-sub">Issued by: Evolvetech</div>
+      </div>
+    </section>
+
+    <!-- Personal Profile & Aspirations -->
+    <section>
+      <h2>Career Ambitions & Personal Attributes</h2>
+      <ul style="list-style: disc; margin-left: 1.25rem; color: var(--charcoal-700); font-size: 0.875rem; line-height: 1.6;">
+        <li><strong>Target Roles:</strong> Software Developer, Web Developer</li>
+        <li><strong>Primary Interests:</strong> Web Development, Full-Stack Development, Machine Learning, Artificial Intelligence</li>
+        <li><strong>Short-Term Goal:</strong> Focus on deeply learning programming languages and fundamental computer science architectures.</li>
+        <li><strong>Long-Term Career Vision:</strong> To become a successful IT professional, continuously improve technical skills, and achieve long-term career growth.</li>
+        <li><strong>Natural Languages:</strong> English (Professional Working), Kannada (Native / Fluent)</li>
+        <li><strong>Personal Hobby:</strong> Writing a diary & daily reflections (fosters discipline, structured logic, and meticulous documentation).</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
