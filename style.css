@@ -2146,3 +2146,19 @@ h1, h2, h3, h4, h5, h6 {
     break-inside: avoid;
   }
 }
+/* Your existing CSS code */
+
+.some-class {
+    /* existing styles */
+}
+
+/* Add your new code below */
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+}
