@@ -2156,7 +2156,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Add your new code below */
 
 .profile-photo {
-    width: 2000px;
+    width: 150px;
     height: 200px;
     border-radius: 0;
     object-fit: cover;
