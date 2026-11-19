@@ -585,14 +585,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-text {
-  flex: 1;
-  min-width: 0;
-}
-
-.hero-image {
-  flex: 0 0 280px;
-  width: 280px;
-  height: 280px;
+  text-align: left;
 }
 
 .hero-badge-row {
@@ -2173,12 +2166,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Add your new code below */
 
 .profile-photo {
-  width: 100%;
-  max-width: 380px;
-  height: 460px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 24px;
-  
-}
+    width: 150px;
+    height: 200px;
+    border-radius: 0;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
 }
