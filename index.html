@@ -1,6 +1,254 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+<head><!DOCTYPE html>
+<html lang="en" data-theme="light">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SUTHI | MCA Portfolio | Poornaprajna Institute of Management</title>
+  <meta name="description" content="Portfolio of SUTHI, first year MCA student at Poornaprajna Institute of Management (PIM), Udupi.">
+  <meta name="author" content="suthi">
+  <meta name="theme-color" content="#f97316">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "suthi",
+    "jobTitle": "First Year MCA Student",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Udupi",
+      "addressRegion": "Karnataka",
+      "addressCountry": "India"
+    },
+    "email": "mailto:suthipoojari@gmail.com",
+    "telephone": "+918904035347",
+    "url": "https://github.com/SuthiPoojary",
+    "sameAs": [
+      "https://github.com/SuthiPoojary"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">
+    Skip to main content
+  </a>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+
+      <a href="#hero" class="brand-link" id="nav-brand-logo">
+        <div class="brand-logo-icon">S</div>
+        <span>suthi</span>
+        <span class="brand-tag">MCA '28</span>
+      </a>
+
+      <nav class="nav-links" id="desktop-nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#ambitions" class="nav-link">Trajectory</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+
+        <button type="button"
+          class="theme-toggle-btn"
+          id="theme-toggle"
+          aria-label="Toggle theme">
+
+          <svg class="sun-icon"
+            style="display:none;"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+          </svg>
+
+          <svg class="moon-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+
+        </button>
+
+        <button type="button"
+          class="btn btn-secondary btn-sm nav-resume-btn"
+          id="open-resume-btn">
+
+          Resume
+        </button>
+
+        <button type="button"
+          class="mobile-nav-toggle"
+          id="mobile-nav-toggle"
+          aria-label="Open mobile menu"
+          aria-expanded="false"
+          aria-controls="mobile-drawer">
+
+          ☰
+
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer"
+    id="mobile-drawer"
+    aria-hidden="true">
+
+    <div class="drawer-panel">
+
+      <div class="drawer-header">
+
+        <a href="#hero" class="brand-link" id="mobile-brand-link">
+          <div class="brand-logo-icon">S</div>
+          <span>suthi</span>
+        </a>
+
+        <button type="button"
+          class="btn-icon-only"
+          id="close-drawer-btn">
+
+          ✕
+        </button>
+
+      </div>
+
+      <div class="drawer-links">
+
+        <a href="#about" class="drawer-link">About</a>
+        <a href="#education" class="drawer-link">Education</a>
+        <a href="#skills" class="drawer-link">Skills</a>
+        <a href="#projects" class="drawer-link">Projects</a>
+        <a href="#certifications" class="drawer-link">Certifications</a>
+        <a href="#ambitions" class="drawer-link">Career Trajectory</a>
+        <a href="#contact" class="drawer-link">Contact</a>
+
+      </div>
+
+      <div class="drawer-footer">
+
+        <button type="button"
+          class="btn btn-primary"
+          id="drawer-resume-btn">
+
+          View Resume
+
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <section class="section hero-section" id="hero">
+
+      <div class="container hero-layout">
+
+        <div class="hero-profile-image">
+          <img
+            src="images/profile.png"
+            alt="Suthi's profile photo"
+            class="profile-photo">
+        </div>
+
+        <div class="hero-content">
+
+          <div class="hero-badge-row">
+
+            <div class="location-badge">
+              <span>📍 Udupi, Karnataka</span>
+            </div>
+
+            <div class="status-indicator-badge">
+              <span class="status-dot"></span>
+              <span>First-Year MCA Student at PIM Udupi</span>
+            </div>
+
+          </div>
+
+          <div class="hero-title-greeting">
+            Hello, I'm
+          </div>
+
+          <h1 class="hero-main-name">
+            suthi
+          </h1>
+
+          <h2 class="hero-headline">
+            First Year MCA Student
+            <span class="highlight-orange">
+              & Aspiring Software Developer
+            </span>
+          </h2>
+
+          <p class="hero-pitch">
+            Master of Computer Applications scholar at
+            <strong>Poornaprajna Institute of Management (PIM)</strong>
+            with an <strong>8.87 CGPA</strong> foundation in BCA.
+            Driven by a deep commitment to mastering core programming
+            languages, building web applications, and exploring
+            machine learning solutions that solve real-world problems.
+          </p>
+
+          <div class="hero-ctas">
+
+            <a href="#projects" class="btn btn-primary">
+              Explore Work →
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              Get in Touch
+            </a>
+
+            <button type="button"
+              class="btn btn-outline"
+              id="hero-btn-resume">
+
+              View Resume
+
+            </button>
+
+            <a href="https://github.com/SuthiPoojary"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline">
+
+              GitHub
+
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
