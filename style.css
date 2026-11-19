@@ -573,14 +573,11 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 900px;
   margin: 0 auto;
 }
-
-.hero-content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 40px;
+ .hero-content {
+  display: block;
+  text-align: left;
 }
-
+ 
 .hero-text {
   text-align: left;
 }
